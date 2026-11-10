@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRILLA | Moda que te hace brillar</title>
+    <link rel="shorcut icon" href="img/logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="encabezado">
+        <a class="marca" href="#inicio">
+            <i class="fa-regular fa-star"></i>
+            <span class="marca-texto">
+                BRILLA
+                <small>MODA QUE TE HACE BRILLAR</small>
+            </span>
+        </a>
+
+        <!--Botton hamburguesa-->
+        <button class="menu-button" id="menuBoton" aria-label="Abrir menu" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Menu de Navegacion-->
+        <nav class="navegacion" id="navegacion">
+            <ul>
+                <li><a class="activo" href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Tienda</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!--iconos-->
+        <div class="acciones-header">
+            <a href="#productos" aria-label="Buscar Productos">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+
+            <button id="verCarrito" aria-label="Ver Carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="contador">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!--Portada Principal-->
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <p class="sobre-titulo">NUEVA TEMPORADA</p>
+                <h1>
+                    Tu estilo,<br>
+                    tu esencia <span><i class="fa-regular fa-heart"></i></span>
+                </h1>
+                <p class="hero-descripcion">
+                    Descubrí las últimas tendencias
+                    <br>
+                    en un solo lugar.
+                </p>
+
+                <a class="boton boton-rosa" href="#productos">
+                    Comprar ahora
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-foto">
+
+                <img src="img/perchero.avif"
+                    alt="Prendas de ropa en perchas">
+
+                <span class="corazon corazon-uno">♡</span>
+                <span class="corazon corazon-dos">♡</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- BENEFICIOS -->
+        <section class="beneficios">
+
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>Envíos a todo el país</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-credit-card"></i>
+                <span>Pagá como quieras</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Compra segura</span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-headset"></i>
+                <span>Atención personalizada</span>
+            </div>
+
+        </section>
+
+
+        <!-- PRODUCTOS -->
+        <section class="productos seccion" id="productos">
+
+            <div class="titulo-linea">
+                <span></span>
+                <h2>Productos destacados ♡</h2>
+                <span></span>
+            </div>
+
+            <div class="grilla-productos">
+
+                <!-- PRODUCTO 1 -->
+                <article class="tarjeta">
+
+                    <div class="foto-producto">
+                        <span class="etiqueta">Nuevo</span>
+
+                        <img src="img/remera blanc.avif"
+                            alt="Remera blanca">
+                    </div>
+
+                    <div class="datos-producto">
+
+                        <h3>Remera Star</h3>
+
+                        <p class="precio">$18.990</p>
+
+                        <button class="agregar" data-producto="Remera Star">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 2 -->
+                <article class="tarjeta">
+
+                    <div class="foto-producto">
+                        <span class="etiqueta">Más vendido</span>
+
+                        <img src="img/buzo.avif"
+                            alt="Buzo cómodo">
+                    </div>
+
+                    <div class="datos-producto">
+
+                        <h3>Buzo Good Vibes</h3>
+
+                        <p class="precio">$34.990</p>
+
+                        <button class="agregar" data-producto="Buzo Good Vibes">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 3 -->
+                <article class="tarjeta">
+
+                    <div class="foto-producto">
+                        <span class="etiqueta">Nuevo</span>
+
+                        <img src="img/jean.avif"
+                            alt="Jean negro">
+                    </div>
+
+                    <div class="datos-producto">
+
+                        <h3>Jean Wide Leg</h3>
+
+                        <p class="precio">$42.990</p>
+
+                        <button class="agregar" data-producto="Jean Wide Leg">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PRODUCTO 4 -->
+                <article class="tarjeta">
+
+                    <div class="foto-producto">
+                        <span class="etiqueta">Oferta</span>
+
+                        <img src="img/remera gatito.avif"
+                            alt="Sweater claro">
+                    </div>
+
+                    <div class="datos-producto">
+
+                        <h3>Sweater Moño</h3>
+
+                        <p class="precio">
+                            <del>$24.990</del>
+                            <strong>$19.990</strong>
+                        </p>
+
+                        <button class="agregar" data-producto="Sweater Moño">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Agregar al carrito
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUSCRIPCIÓN -->
+        <section class="newsletter" id="contacto">
+
+            <div class="newsletter-icono">
+                <i class="fa-regular fa-envelope"></i>
+            </div>
+
+            <div class="newsletter-texto">
+                <h2>¡Suscribite a nuestro newsletter!</h2>
+
+                <p>Recibí novedades, descuentos y mucho más ♡</p>
+            </div>
+
+            <form id="formNewsletter">
+
+                <label class="solo-lectores" for="email">Tu email</label>
+
+                <input type="email" id="email" placeholder="Tu email..." required>
+
+                <button type="submit">Suscribirme</button>
+
+            </form>
+
+            <span class="newsletter-corazon">♡</span>
+
+        </section>
+
+
+        <!-- NOSOTROS -->
+        <section class="nosotros seccion" id="nosotros">
+
+            <p>
+                En BRILLA creemos que la moda es una forma de expresarte.
+                Elegí lo que te gusta, combiná a tu manera y brillá con tu propio estilo.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie">
+
+        <a class="marca marca-pie" href="#inicio">
+
+            <i class="fa-regular fa-star"></i>
+
+            <span class="marca-texto">
+                BRILLA
+                <small>Moda que te hace brillar ♡</small>
+            </span>
+
+        </a>
+
+
+        <div class="links-pie">
+
+            <h3>Links</h3>
+
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Tienda</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+
+        </div>
+
+
+        <div class="redes">
+
+            <h3>Seguinos</h3>
+
+            <div>
+
+                <a href="https://www.instagram.com/" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="https://www.tiktok.com/" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+                <a href="https://www.pinterest.com/" aria-label="Pinterest">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+                <a href="https://www.youtube.com/" aria-label="YouTube">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <p class="frase-pie">Brilla siempre ♡</p>
+
+        <p class="copyright">
+            © 2026 BRILLA. Todos los derechos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- BOTÓN VOLVER ARRIBA -->
+    <button class="volver-arriba" id="volverArriba" aria-label="Volver arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+
+    <!-- ARCHIVO JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
